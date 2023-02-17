@@ -18,7 +18,6 @@
 		  line-height: 40px;
 		  font-family: 微软雅黑;
 		  font-size: larger;
-
 		}
 </style>
 <!-- Homepage Specific Elements -->
@@ -35,14 +34,17 @@
     <table  width="100%" border="0" cellspacing="0" cellpadding="0">
       <tbody>
         <tr>
-          <td  width="60%" valign="middle" style="word-break: break-all;" align="left">
-            <h1><a href="index.html"><font face="Times">
-              计算机科学与医学交叉工程<br>
-              Computer Science and Medical<br>
-              Interdisciplinary Engineering
-            </font></a></h1>
+          <td  width="70%" valign="middle" style="word-break: break-all;" align="left">
+            <h1 style="color: white;"><font face="Times">
+              计算机科学与医学交叉工程<font weight="bolder" style="font-family: 微软雅黑;"> | </font>统一身份认证<br>
+              Central Authentication Service 
+            </font></h1>
           </td>
-          <td  width="40%" valign="middle" style="word-break: break-all;" align="right">
+          
+          <td  width="30%" valign="middle" style="word-break: break-all;" align="right">
+            <div style="font-family:微软雅黑;font-size: medium;">
+              <a href="index.html" style="text-decoration: none;color: white;">主页</a>
+            </div>
             <br>
             <p>
               <div id="time" style="font-family:微软雅黑;font-size: medium;color: white;"></div>
@@ -67,26 +69,8 @@
               </div>
             </p>
             <p>
-              <div style="font-family:微软雅黑;font-size: medium;">
-                <script type="text/javascript">
-                  var countDownDate = new Date("Dec 24, 2023 0:00:00").getTime();
-                  var x = setInterval(
-                      function() {
-                          var now = new Date().getTime();
-                          var distance = countDownDate - now;
-                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                          document.getElementById("timer").innerHTML ="距离2024年研究生考试仅剩"+ days + "天 " + hours + "时 "
-                          + minutes + "分 " + seconds + "秒";
-                          if (distance < 0) {
-                              clearInterval(x);
-                              document.getElementById("timer").innerHTML = "EXPIRED";
-                          }
-                      }, 
-                  1000);
-                </script>
+              <div style="font-family:微软雅黑;font-size: medium;color: white;">
+              <script type="text/javascript" src="js/timecount.js"></script>
               </div>
             </p>
           </td>
@@ -104,7 +88,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>统一身份认证</title>
 	</head>
-		<h1 style="font-size: 36px;font-weight: bold;font-family: 微软雅黑;text-align: center;">统一身份认证登录</h1>
+		
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<div class="login">
 			<label>UserName</label><br>
 			  <input id="username"><br>
@@ -124,23 +109,17 @@
 				else{alert("Password Failed!Please Input Again!");}
 		}
 		</script>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br>
-    
-    
     <!-- ####################################################################################################### -->
   </div>
 </div>
+<!----CopyRight-->
+<footer style="padding:10px;text-align: center; background-position: bottom;margin-top:40px;">
+  <hr>
+  <div style="font-family:Arial, Helvetica, sans-serif; text-align: center;color: black; font-size: small;padding-bottom: 10px;padding-top: 0px;">
+  Copyright &copy; 2023 - Department of Computer Science and Medical Interdisciplinary Engineering
 
-
-<!----CopyRight-->>
-
-  <div style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: medium;">
-    <p class="center">Copyright &copy; 2023 - Department of Computer Science and Medical Interdisciplinary Engineering </p>
   </div>
-
-
-
+</footer>
 </body>
 </html>
 
