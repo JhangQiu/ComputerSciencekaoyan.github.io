@@ -2,23 +2,37 @@
 <html>
 <head profile="http://gmpg.org/xfn/11">
 <link rel="shortcut icon" href="CSE-MED">
-<title>Department of Computer Science and Medical Interdisciplinary Engineering</title>
+<title>统一身份认证</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="imagetoolbar" content="no" />
 <link rel="stylesheet" href="css/layout.css" type="text/css" />
 <style>
-	.login{
-		  width:350px;
-		  height:200px;
-		  position:absolute;
-		  left:50%;
-		  top:50%;
-		  margin-left:-150px;
-		  margin-top:-100px;
-		  line-height: 40px;
-		  font-family: 微软雅黑;
-		  font-size: larger;
-		}
+	input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #4d90fe;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4d90fe;
+}
 </style>
 <!-- Homepage Specific Elements -->
 <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
@@ -31,7 +45,7 @@
 <body id="top">
 <div class="wrapper row1">
   <div id="header" class="clear">
-    <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table  width="100%" border="0" cellspacing="0" cellpadding="0" >
       <tbody>
         <tr>
           <td  width="70%" valign="middle" style="word-break: break-all;" align="left">
@@ -40,65 +54,43 @@
               Central Authentication Service 
             </font></h1>
           </td>
-          
-          <td  width="30%" valign="middle" style="word-break: break-all;" align="right">
-            <div style="font-family:微软雅黑;font-size: medium;">
-              <a href="index.html" style="text-decoration: none;color: white;">主页</a>
-            </div>
-            <br>
-            <p>
-              <div id="time" style="font-family:微软雅黑;font-size: medium;color: white;"></div>
-              <div style="font-family:微软雅黑;font-size: medium;">
-                <script type="text/javascript"> 
-                  setInterval(function(){
-                      var time=new Date();
-                      var year=time.getFullYear();
-                      var month=time.getMonth()+1;
-                      var day=time.getDate();
-                      var hour=checkTime(time.getHours());
-                      var minite=checkTime(time.getMinutes());
-                      var second=checkTime(time.getSeconds());
-                      function checkTime(i){
-                        if(i<10) return "0"+i;
-                        return i;
-                      }
-                      var box=document.getElementById("time");
-                      box.innerHTML="当前时间："+year+"年"+month+"月"+day+"日  "+hour+":"+minite+":"+second;		  
-                  },1000);
-                </script>
-              </div>
-            </p>
-            <p>
-              <div style="font-family:微软雅黑;font-size: medium;color: white;">
-              <script type="text/javascript" src="js/timecount.js"></script>
-              </div>
-            </p>
-          </td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 <!-- ####################################################################################################### -->
+<br><br><br>
 <div class="wrapper row3">
-  <div id="container" class="clear">
+  <div id="container" class="clear" style="background-color: LightCyan;">
     <!-- ####################################################################################################### -->
-    <head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>统一身份认证</title>
-	</head>
-		
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<div class="login">
-			<label>UserName</label><br>
-			  <input id="username"><br>
-			<label>Password</label><br>
-			  <input id="password" type="password"><br>
-			  <br>
-			<button onclick="myFunction()">登录</button><br>
-			忘记密码请联系管理员！
-		</div>
+    <table>
+      <tbody style="width: 100%;">
+        <tr>
+          <td style="width:55%; text-align: center;">
+            <img src="image/Login.png" alt="Login" width="450" height="450">
+          </td>
+          <td style="width: 45%;padding-right: 30px;">
+            <div style="font-size:27px;font-weight:bolder;line-height:40px;font-family: 微软雅黑;">统一身份认证</div>
+            <br>
+                <div style="border-radius: 5px;background-color: white;padding: 20px;box-shadow: darkgrey 2px 2px 5px 2px" >
+                    <label style="font-family:微软雅黑;font-size:medium;font-weight:bold;">用户名</label>
+                    <input type="text" id="Account" placeholder="Account">
+                    <label style="font-family:微软雅黑;font-size:medium;font-weight:bold;">密码</label>
+                    <input type="text" id="password" placeholder="Password">
+                    <label style="font-family:微软雅黑;font-size:medium;font-weight:bold;">身份认证</label>
+                    <select id="country" name="country">
+                      <option value="australia">Staff</option>
+                      <option value="canada">Student</option>
+                      <option value="usa">Guest</option>
+                    </select>
+                    <button onclick="myFunction()">登录</button><br>
+                </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
 		<!---***************************************************************************************-->
 		<script>
 		  function myFunction() {
@@ -109,17 +101,17 @@
 				else{alert("Password Failed!Please Input Again!");}
 		}
 		</script>
+    <!---**************************************************************************************-->
     <!-- ####################################################################################################### -->
+    <div style="font-family:Arial, Helvetica, sans-serif; text-align: center;color: black; font-size: small;padding-bottom: 10px;padding-top: 0px;">
+      Copyright &copy; 2023 - Department of Computer Science and Medical Interdisciplinary Engineering<br>
+      Questions or comments regarding Canvas? Send e-mail to the course Staffs or TAs.
+    </div>
   </div>
 </div>
 <!----CopyRight-->
-<footer style="padding:10px;text-align: center; background-position: bottom;margin-top:40px;">
-  <hr>
-  <div style="font-family:Arial, Helvetica, sans-serif; text-align: center;color: black; font-size: small;padding-bottom: 10px;padding-top: 0px;">
-  Copyright &copy; 2023 - Department of Computer Science and Medical Interdisciplinary Engineering
 
-  </div>
-</footer>
+  
 </body>
 </html>
 
