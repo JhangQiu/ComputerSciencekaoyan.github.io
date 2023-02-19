@@ -44,9 +44,6 @@
 						
 <!-- Curriculum -->
 							<div style="font-family:Arial, Helvetica, sans-serif">
-								<font size="4" style="line-height:40px;font-family:Verdana, Helvetica, sans-serif;font-weight: bold;">
-									
-								</font>
 								<h3>Overview</h3>
 								<hr>
 									<div style="padding-left:50px;">
@@ -273,7 +270,35 @@
 										<tr style="background-color: antiquewhite;">
 											<td width="5%"><div align="center">12</div></td>
 											<td width="10%"><div align="left" style="padding-left: 15px;">5/7</div></td>
-											<td colspan="3"><div align="left" style="padding-left: 15px;">2023 National English Competitionfor College Students</div></td>
+											<td colspan="2"><div align="center">2023 National English Competitionfor College Students</div></td>
+											<td width="30%"><div align="left" style="padding-left: 15px;">
+												<p id="timer">
+													<script type="text/javascript" style="color: #000000;">
+														var countDownDate = new Date("May 7, 2023 0:00:00").getTime();
+														var x = setInterval(
+															function() {
+																// Get todays date and time
+																var now = new Date().getTime();
+																// Find the distance between now an the count down date
+																var distance = countDownDate - now;
+																// Time calculations for days, hours, minutes and seconds
+																var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+																var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+																var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+																var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+																// Output the result in an element with id="timer"
+																document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+																+ minutes + "min " + seconds + "s ";
+																// If the count down is over, write some text 
+																if (distance < 0) {
+																	clearInterval(x);
+																	document.getElementById("timer").innerHTML = "EXPIRED";
+																}
+															}, 
+														1000);
+													</script>
+												</p>
+											</div></td>
 										</tr>
 
 										<tr>
@@ -319,7 +344,9 @@
 										<tr style="background-color: antiquewhite;">
 											<td width="5%"><div align="center">18</div></td>
 											<td width="10%"><div align="left" style="padding-left: 15px;">6/17</div></td>
-											<td colspan="3"><div align="left" style="padding-left: 15px;">CET6</div></td>
+											<td colspan="2"><div align="center">College English Test Band Six</div></td>
+											<td width="30%"><div align="left" style="padding-left: 15px;">
+											</div></td>
 										</tr>
 
 										
