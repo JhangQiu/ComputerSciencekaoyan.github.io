@@ -357,6 +357,15 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     width:100%;
 	list-style-type:none;
 }
+.LLvertical-menu .title{
+	font-size: 18px;
+	font-weight:bold;
+	color:#B01F24;
+	text-align: left;
+	font-family: 微软雅黑;
+	line-height: 40px;
+	border-bottom: 1px solid #d9d9d9;
+}
 .LLvertical-menu a{
     background-color: #eee;
     color: black;
@@ -381,6 +390,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     color: red;
 	background-color: #ccc;
 }
+
 
 /*-----------------------------------------------TXTLIST------------------------------------*/
 
