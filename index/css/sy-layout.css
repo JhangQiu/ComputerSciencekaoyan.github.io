@@ -172,6 +172,59 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 #comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
 
+
+/*----------------------------------------Current Position---------------------------------*/
+
+
+
+.current_loc{
+	font-size: 16px;
+	font-family: 微软雅黑;
+	text-decoration: none;
+	color: #023474;
+	font-weight: bold;
+	text-align: right;
+	line-height: normal;
+}
+.current_loc a{
+	font-size: 16px;
+	font-family: 微软雅黑;
+	text-decoration: none;
+	color: #023474;
+	font-weight: bold;
+	text-align: right;
+	text-decoration: none;
+	line-height: normal;
+}
+
+/*-----------------------------------------Content----------------------------------------*/
+
+
+
+.sy-news{
+	font-family: 微软雅黑;
+	font-size: 16px;
+	color: #000;
+	line-height: normal;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------------Column-------------------------------------*/
 
 #column{
