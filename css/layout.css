@@ -1,19 +1,3 @@
-/*
-Template Name: Education Board
-File: Layout CSS
-Author: OS Templates
-Author URI: http://www.moobnn.com/
-Licence: <a href="#">Website Template Licence</a>
-*/
-
-@import url(navi.css);
-@import url(forms.css);
-@import url(tables.css);
-@import url(homepage.css);
-@import url(gallery.css);
-@import url(portfolio.css);
-@import url(featured_slide.css);
-
 body{
 	margin:0;
 	padding:0;
@@ -23,8 +7,6 @@ body{
 	height: 100%;
 	background-color:#F8F8F8 ;
 	}
-
-img{margin:0; padding:0; border:none;}
 .justify{text-align:justify;}
 .bold{font-weight:bold;}
 .center{text-align:center;}
@@ -53,35 +35,23 @@ div.wrapper{
 	text-align:left;
 	}
 
-div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
-	margin:0 0 15px 0;
-	padding:0;
-	font-size:16px;
-	font-weight:normal;
-	font-style:T;
-	line-height:normal;
-	color:#333333;
-	background-color:transparent;
-}
-
-.row1, .row2{
+.row1{
 	color:#979797;
-	background-color:#F8F8F8 ;
+	background-color:#F8F8F8;
+	background-image: linear-gradient(#404040,white);
+	position:fixed;
+	_position:absolute;
+	top:0
 }
 
 .row3{
 	color:#000; 
+	background-color:#FFFFFF; 
 	border-top:1px solid #FFFFFF; 
 	border-bottom:5px solid #FFFFFF;
 	margin: 0 auto;
 	height: 100%;
 }
-.row3{
-	background-color:#F8F8F8 ;
-
-}
-.row4{padding:30px 0;
-	background-color:#F8F8F8 ;}
 
 /* ----------------------------------------------Generalise-------------------------------------*/
 
@@ -95,41 +65,18 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	}
 
 /* ----------------------------------------------Header-------------------------------------*/
-
-#header{padding:25px 0 30px 0;}
-
-#header h1, #header p, #header ul{
-	margin:0;
-	padding:0;
-	list-style:none;
-	line-height:normal;
-	padding-left: 40px;
-	}
-
-#header h1{
-	font-size:26px; 
-	font-variant:small-caps; 
-	font-style:normal;
+#header{
+	padding:25px 0 30px 0;
 }
 
-#header p{
-	font-size:12px;
+#time{
+	font-family:微软雅黑;
+	font-size: medium;
+	color:white;
 }
 
-#header p a{
-	color:#fff; 
-	
-}
 
-#header .fl_left, #header .fl_right{
-	margin-bottom:15px;
-}
 
-#header .fl_right{
-	margin-top:13px;
-}
-
-#header .fl_right p{float:left; margin:5px 50px 0 0;}
 
 /* ----------------------------------------------Content-------------------------------------*/
 
@@ -148,30 +95,6 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 	width:1100px;
 
 	}
-
-/* ------Comments-----*/
-
-#comments{margin-bottom:40px;}
-
-#comments .commentlist{margin:0; padding:0;}
-
-#comments .commentlist ul{margin:0; padding:0; list-style:none;}
-
-#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
-
-#comments .commentlist li.comment_odd{color:#666666; }
-#comments .commentlist li.comment_odd a{color:#896C50; }
-
-#comments .commentlist li.comment_even{color:#666666; }
-#comments .commentlist li.comment_even a{color:#896C50; }
-
-#comments .commentlist .author .name{font-weight:bold;}
-#comments .commentlist .submitdate{font-size:smaller;}
-
-#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
-
-#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
-
 /* ----------------------------------------------Column-------------------------------------*/
 
 #column{
@@ -509,12 +432,13 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .txtList5-m1 .txt1 {
     display: block;
     overflow: hidden;
-    padding-top: 15px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+	
 }
 
 .txtList5-m1 .txt1 h3 a {
-    height: 46px;
+    height: 66px;
     font-size: 18px;
 	font-weight: bold;
     color: #013f88;
