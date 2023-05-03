@@ -12,60 +12,42 @@
 
 <!-- End Homepage Specific Elements -->
 </head>
-<body id="top">
-
-  <div class="wrapper row1" style="background-image: linear-gradient(	#404040,#F8F8F8);" >
-    <div id="header" class="clear">
-      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr>
-            <td  width="35%" valign="middle" style="word-break: break-all;" align="left" rowspan="2">
-              <a href="index.html">
-                <img src="image/CSMIE.png" width="400" >
-              </a>
-            </td>
-            <td  width="65%" valign="middle" style="word-break: break-all;text-align: right;">
-                <div id="time" style="font-family:微软雅黑;font-size: medium;color:white;"></div>
-                <div style="font-family:微软雅黑;font-size: medium;">
-                  <script type="text/javascript"> 
-                    setInterval(function(){
-                        var time=new Date();
-                        var year=time.getFullYear();
-                        var month=time.getMonth()+1;
-                        var day=time.getDate();
-                        var hour=checkTime(time.getHours());
-                        var minite=checkTime(time.getMinutes());
-                        var second=checkTime(time.getSeconds());
-                        function checkTime(i){
-                          if(i<10) return "0"+i;
-                          return i;
-                        }
-                        var box=document.getElementById("time");
-                        box.innerHTML="当前时间："+year+"年"+month+"月"+day+"日  "+hour+":"+minite+":"+second;		  
-                    },1000);
-                  </script>
+  <body>
+    <div class="wrapper row1">
+      <div id="header" class="clear">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td  width="35%" valign="middle" style="word-break: break-all;" align="left" rowspan="2">
+                <a href="index.html">
+                  <img src="image/CSMIE.png" width="400" >
+                </a>
+              </td>
+              <td width="65%" valign="middle" style="word-break: break-all;text-align: right;">
+                  <div id="time"><script type="text/javascript" src="js/currenttime.js"></script></div>
+              </td>
+            </tr>
+            <tr>
+              <td width="65%" valign="middle" style="word-break: break-all;text-align: right;">
+                <div style="font-family:微软雅黑;font-size: medium;color: white;">
+                  <a href="https://gitee.com/login?redirect_to_url=%2Fdashboard" target="_blank" style="text-decoration: none;color: white;">统一身份认证</a>
+                  &ensp;
+                  |
+                  &ensp;
+                  <a href="https://mail.sjtu.edu.cn/zimbra/mail#1" style="color:white;text-decoration:none;" target="_blank">Zimbra邮箱</a>
+                  &ensp;
+                  |
+                  &ensp;
+                  <a href="https://mail.163.com/js6/main.jsp?sid=cBHHoacPmGwwovBkucPPMeVrFYVVybMP&df=mail163_letter#module=mbox.ListModule%7C%7B%22filter%22%3A%7B%22flags%22%3A%7B%22read%22%3Afalse%7D%7D%2C%22order%22%3A%22date%22%2C%22desc%22%3Atrue%2C%22fids%22%3A%5B1%2C3%2C18%5D%7D" style="color:white;text-decoration: none;" target="_blank">163邮箱</a>
                 </div>
-            </td>
-          </tr>
-          <tr>
-            <td width="65%" valign="middle" style="word-break: break-all;text-align: right;">
-              <div style="font-family:微软雅黑;font-size: medium;color: white;">
-                <a href="https://gitee.com/login?redirect_to_url=%2Fdashboard" target="_blank" style="text-decoration: none;color: white;">统一身份认证</a>
-                &ensp;
-                |
-                &ensp;
-                <a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " style="color:white;text-decoration:none;" target="_blank">Zimbra邮箱</a>
-                &ensp;
-                |
-                &ensp;
-                <a href=" https://mail.163.com/js6/main.jsp?sid=cBHHoacPmGwwovBkucPPMeVrFYVVybMP&df=mail163_letter#module=mbox.ListModule%7C%7B%22filter%22%3A%7B%22flags%22%3A%7B%22read%22%3Afalse%7D%7D%2C%22order%22%3A%22date%22%2C%22desc%22%3Atrue%2C%22fids%22%3A%5B1%2C3%2C18%5D%7D " style="color:white;text-decoration: none;" target="_blank" >163邮箱</a>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="background-color: #F8F8F8; border: #F8F8F8;" >
+      </div>
     </div>
-  </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper row3">
   <div id="container" class="clear" style="line-height: 30px;">
