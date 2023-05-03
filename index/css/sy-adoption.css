@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body{overflow-x: hidden;}
+.fl{ float:left}
+.fr{ float:right}
+.clearfix{zoom: 1;}
+.clearfix::after {clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}
+/* .w12 {max-width: 12rem;margin: 0 auto;}
+.w123 {max-width: 12.3rem;margin: 0 auto;}
+.w14 {max-width: 14rem;margin: 0 auto;}
+.w10 {max-width: 100%;margin: 0 auto;}
+@media screen and (max-width: 800px) {
+	.w12{max-width: 800px;margin: 0 .5rem;}
+	.w123 {max-width:800rem;margin: 0;}
+	.w14{max-width: 800px;margin: 0 .5rem;}
+} */
+
+/* .NrContainer */
+
+.NrContainer{margin-top: 0.8rem;border-bottom: 1px solid #dfdfdf;padding-bottom: 0.66rem;}
+.NrLeft{width: 1070px;float: left;}
+
+
+@media screen and (max-width: 1430px) {
+	.NrLeft{width: 79%; float: left;}
+}
+
+@media screen and (max-width: 800px) {
+	.NrLeft{width: 100%; float: none;}
+}
+
+/* 侧边导航 */
+.RightNav{width: 250px; float: right;/* margin-top: 0.1rem; */}
+.ny_left{width: 100%;}
+.ny_left_top{display: none;height: 0.7rem;background: #e5e5e5;padding: 0 0.2rem;}
+.ny_left_top h5{height: 0.7rem;line-height: 0.7rem;font-size: 0.34rem;color: #000;font-weight: normal;}
+.ny_left_top .list-nav-icon img{width: 0.4rem;display: block;margin-top: 0.15rem;}
+.sidenav{ overflow:hidden; display:block;}
+.accordion { width:100%; }
+/* .accordion li:first-child .nav-link{border-top: 1px solid #d9d9d9;} */
+.accordion .nav-link {padding-left: 30px;padding-right: 30px;display: block;line-height: 50px;min-height: 50px;height: 100%;border-bottom: 1px solid #d9d9d9;}
+.accordion .nav-link a{ display: block;color: #666666;font-size: 18px;line-height: 50px;}
+.accordion .nav-link:hover a{color: #01478e;}
+.accordion .nav-link.hover a{color: #01478e;}
+
+.accordion .nav-link3 {padding-left: 0.1875rem;padding-right: 0.2875rem;display: block;line-height: 0.26rem;min-height: 50px;height: 100%;border-bottom: 1px solid #d9d9d9;}
+.accordion .nav-link3 a{ display: block;color: #666666;font-size: 0.16rem;line-height: 0.26rem;padding: 0.15rem 0;}
+.accordion .nav-link3:hover{color: #fff;font-weight: bold;background: url(../img/images/rightNav.jpg) no-repeat center;background-size: cover;}
+.accordion .nav-link3:hover a{color: #FFFFFF;}
+.accordion .nav-link3.hover{color: #fff;font-weight: bold;background: url(../img/images/rightNav.jpg) no-repeat center;background-size: cover;}
+.accordion .nav-link3.hover a{color: #FFFFFF;}
+
+/* .currentnav{ background:#f2f3f8 !important; color: #fff !important; } */
+.nav-link1{ width:50px;height: 100%; min-height:50px; line-height:50px; cursor: pointer; position:absolute; top:0; right:3px;}
+.nav-link2::after{ content: ''; width:50px;height: 100%; min-height:50px; line-height:50px; cursor: pointer; position:absolute; top:0; right:3px;}
+.accordion li .nav-linkbg i{ width:50px;height: 100%; min-height:50px; line-height:50px; cursor: pointer; position:absolute; top:0; right:3px; background: url(../img/remov.png) no-repeat center;}
+.accordion li.open .nav-linkbg i {width:50px;height: 100%; min-height:50px; line-height:50px; cursor: pointer; position:absolute; top:0; right:3px; background: url(../img/remov2.png) no-repeat center;}
+.accordion li{  position: relative; overflow:hidden;}
+.accordion li i { display:block; width:30px; height:50px;background: url(../img/icon-add.png) no-repeat center; position: absolute;top:0;right: 0.1rem;font-size: 18px; color: #595959; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.accordion li .nav-link2 i{display:block; width:30px; height:30px;background: url(../image/arrow1.png) no-repeat center; position: absolute;top:0.12rem;font-size: 18px; color: #595959; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;} 
+.accordion li.on2 .nav-link2 i,
+.accordion li:hover .nav-link2 i{background: url(../image/arrow1On.png) no-repeat center;}
+.accordion li.on2 .nav-link,
+.accordion li .nav-link:hover,
+.accordion li.open .nav-link{background: url(../img/images/rightNav.jpg) no-repeat center;background-size: cover;border-bottom:none;}
+.accordion li.on2 .nav-link1 a {color: white;}
+.accordion li .nav-link:hover {background: url(../img/images/rightNav.jpg) no-repeat center;background-size: cover;}
+.accordion li .nav-link:hover a{color: #FFFFFF;}
+.accordion li.open .nav-link a{color: white;}
+.accordion li.open i.fa-chevron-down {background: url(../img/remov2.png) no-repeat center;}
+.accordion li.open .nav-link{border: none;}
+.sidemenu {display: none;border-bottom: 1px solid #d9d9d9;}
+.sidemenu li {border-bottom:none;padding: 0 30px; line-height: 35px; font-size: 16px;}
+.sidemenu li:first-child{padding-top: 15px;}
+.accordion li.open .sidemenu li:first-child{transition: 0.4s;}
+.sidemenu li:last-child{padding-bottom: 15px;}
+.sidemenu a { display: inline-block;line-height: 0.24rem;font-size: 0.14rem;color: #666666;text-decoration: none;-webkit-transition: all 0.25s ease;-o-transition: all 0.25s ease; transition: all 0.25s ease; }
+.sidemenu a.otherLink{background: url(../image/otherLink.png) no-repeat right 0.04rem;padding-right: 0.15rem;}
+.sidemenu a.otherLink:hover{background: url(../image/lj.png) no-repeat right 0.04rem;}
+.sidemenu a.on{color: #01478e;font-weight: bold;} 
+.sidemenu a:hover{color: #01478e;transition: 0.6s all;font-weight: bold;}
+
+.open .sidemenu {
+	display: block !important;
+}
+
+@media only screen and (max-width: 1430px){
+	.RightNav {
+		width: 18%;
+		float: right;
+	}
+	.accordion .nav-link {
+		/* height: .5rem; */
+		line-height: .5rem;
+		min-height: .5rem;
+		padding-left: .3rem;
+		padding-right: .3rem;
+	}
+	.accordion .nav-link1 {
+		line-height: .5rem;
+		min-height: .5rem;
+		width: .5rem;
+	}
+	.accordion li i {
+		height: .5rem;
+		width: .3rem;
+	}
+	.accordion li .nav-linkbg i,
+	.accordion li.open .nav-linkbg i {
+		width: .5rem;
+		height: .5rem;
+		min-height: .5rem;
+	}
+	.list-nav-icon{display: block;width: 30px;right: 10px;top: 5px;}
+	.list-nav-icon img{display: block;width: 100%;}
+	.accordion .nav-link a{ display: block;color: #666666;font-size: 0.18rem;line-height: .5rem;}
+	.accordion .nav-link3 a{ display: block;color: #666666;font-size: 0.18rem;line-height: .5rem;}
+	.sidemenu li {border-bottom:none; line-height: .35rem; font-size: 0.16rem; padding: 0 .3rem;}
+	.sidemenu a { display: inline-block;line-height: 0.48rem;font-size: 0.16rem;}
+	.sidemenu a.otherLink{padding-right: 0.4rem;}
+	.accordion .nav-link3{line-height: 0.52rem;min-height: 0.9rem;height: 100%;padding-right: 0.5rem;}
+}
+
+@media(max-width: 1430px) {
+/* 	
+	.ny_left_top{display: block;}
+	.RightNav{float: none;width: 100%;margin-bottom: 0.4rem;}
+	.list-nav-icon{display: block;width: 30px;right: 10px;top: 5px;}
+	.list-nav-icon img{display: block;width: 100%;}
+	.accordion .nav-link a{ display: block;color: #666666;font-size: 0.32rem;line-height: 50px;}
+	.accordion .nav-link3 a{ display: block;color: #666666;font-size: 0.32rem;line-height: 50px;}
+	.sidemenu li {border-bottom:none;}
+	.sidemenu a { display: inline-block;line-height: 0.48rem;font-size: 0.26rem;}
+	.sidemenu a.otherLink{padding-right: 0.4rem;}
+	.accordion .nav-link3{line-height: 0.52rem;min-height: 0.9rem;height: 100%;padding-right: 0.5rem;} */
+}
+@media only screen and (max-width: 800px) {
+	.sidenav{ overflow:hidden; display:none;}
+	.ny_left_top{display: block;}
+	.RightNav{float: none;width: 100%;margin-bottom: 0.4rem;}
+	.list-nav-icon{display: block;width: 30px;right: 10px;top: 5px;}
+	.list-nav-icon img{display: block;width: 100%;}
+	.accordion .nav-link a{ display: block;color: #666666;font-size: 0.32rem;line-height: 50px;}
+	.accordion .nav-link3 a{ display: block;color: #666666;font-size: 0.32rem;line-height: 50px;}
+	.sidemenu li {border-bottom:none;}
+	.sidemenu a { display: inline-block;line-height: 0.48rem;font-size: 0.26rem;}
+	.sidemenu a.otherLink{padding-right: 0.4rem;}
+	.accordion .nav-link3{line-height: 0.52rem;min-height: 0.9rem;height: 100%;padding-right: 0.5rem;}
+	.accordion .nav-link {
+		height: 40px;
+		min-height: 40px;
+		line-height: 40px;
+		
+	}
+	.accordion .nav-link a {
+		line-height: 40px;
+	}
+	.accordion li i {
+		height: 40px;
+	}
+}
+
+
+@media (max-width: 800px){
+.RightNav2 {
+    z-index: 9;}
+}
