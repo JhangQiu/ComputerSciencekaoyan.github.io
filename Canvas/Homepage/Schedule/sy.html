@@ -1,32 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
-  <title>CSE++PAP</title>
+  <title>Schedule</title>
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="sy-calendar.css" type="text/css">
   <script src="vue.min.js"></script>
-  <script type="text/javascript">
-    function autofill_email() {
-      var spans = document.getElementsByTagName("span");
-      for (i = 0; i < spans.length; i++) {
-        if (spans[i].className != "email_autofill")
-          continue;
-        spans[i].innerHTML = spans[i].innerHTML.replace(/ at /, "@");
-      }
-    }
-    function page_onload() {
-      autofill_email();
-    }
-  </script>
 </head>
 
 <body bgcolor="#ffffff" text="#000000" onLoad="page_onload()">
-    <div id="title-sy">
-        Schedule of PPCA & ICS, 2023 Spring
-    </div>
+    
     <div id="app">
+        <div id="title-sy">
+        Schedule of PPCA & ICS, 2023 Spring
+        </div>
         <Calendar start-date="2023-04-24">
             <!-- Week 0 -->
             <Week>
@@ -215,6 +203,9 @@
                 </Week>
         </Calendar>
 
+
+        
+
         <script type="text/javascript">
             var d = new Date();
             for (var fwd = 0; fwd < 3; fwd++) {
@@ -227,6 +218,8 @@
 
                   <!--  End Page Content  -->
     </div>
+
+
 
     <script type="text/x-template" id="template-calendar">
         <table class="calendar" cellspacing="0" cellpadding="8" width="100%">
