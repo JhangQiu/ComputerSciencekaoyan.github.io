@@ -56,6 +56,10 @@ div.wrapper{
 	text-align: left;
 }
 
+.CSMIE_img_header{
+	width: 400px;
+}
+
 .headertext{
 	width:65%;
 	word-break: break-all;
@@ -76,6 +80,11 @@ div.h_text{
 	font-family:微软雅黑;
 	font-size: small;
 	color: white;
+	line-height: 40px;
+}
+
+.vertical-line{
+	display: inline-block;
 }
 
 
@@ -94,16 +103,36 @@ div.h_text{
 	line-height:0;
 }
 
-#content{
+
+
+.content{
 	width:100%;
-	padding-left: 20px;
-	padding-right: 20px;
 	line-height: normal;
+	position: relative;
+	
+}
+
+div.main_content{
+	width: 75%;
+    float: left;
+	padding-left: 40px;
+	padding-bottom:40px ;
 }
 
 /*-------------------------vertical-menu------------------------------------------------------*/
+
+div.menu{
+	width: 18%;
+    float: left;
+	padding-top: 40px;
+	padding-left: 30px;
+	
+}
+
 .vertical-menu {
-    width:100%;
+    width:95%;
+	font-size: medium;
+	line-height:30px;
 }
 .vertical-menu a {
     color: black;
@@ -162,7 +191,6 @@ div.h_text{
 	font-family: 微软雅黑;
 	font-size: medium;
 	float:right;
-	
   }
 
 
@@ -204,8 +232,9 @@ div.h_text{
 }
 
 .LLvertical-menu {
-    width:100%;
+    width:90%;
 	list-style-type:none;
+    text-align: left;
 }
 
 .LLvertical-menu ul{
@@ -249,14 +278,29 @@ div.h_text{
 	background-color: #ccc;
 }
 
+.cardBox {
+    width:30%;
+    color: #F8F8F8;
+	text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.bodyBox {
+    padding: 10px;
+    font-size: small;
+    text-align: left;
+}
 
 /*-----------------------------------------------TXTLIST------------------------------------*/
 
-.txtList5 {
+ul.txtList5 {
     display: block;
     font-size: 0;
     width: 100%;
+	padding-left: 40px;
 }
+
 .txtList5 li {
     width: 33%;
     padding: 10px 0px;
@@ -277,6 +321,7 @@ div.h_text{
     overflow: hidden;
     clear: both;
     padding-bottom: 3px;
+	vertical-align: middle;
 }
 
 .txtList5-m1 .date,
@@ -286,7 +331,6 @@ div.h_text{
     *zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
-    vertical-align: top;
 }
 
 .txtList5-m1 .date {
@@ -329,8 +373,8 @@ div.h_text{
 }
 
 .txtList5-m1 .date p {
-    font-size: 20px;
-    line-height:10px;
+    font-size: 17px;
+    line-height:2px;
     font-family: "RobotoRegular";
     color: #666;
 }
@@ -369,7 +413,7 @@ div.h_text{
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 2px;
-	
+
 }
 
 .txtList5-m1 .txt1 h3 a {
@@ -382,6 +426,7 @@ div.h_text{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+	text-align: left;
 }
 
 .txtList5-m1 .txt1 .ct {
@@ -398,77 +443,240 @@ div.h_text{
     border-bottom: 0px;
 }
 
-@media screen and (max-width:1220px) {  }
+/*--------------------------------adaption---------------------------------*/
+
+@media screen and (min-width:1220px) {
+
+    .h_br{
+		display: none;
+	}
+
+
+}
+@media screen and (max-width:1220px) {
+
+    .txtList5 li {
+        /*width: 100%;*/
+		width:50%;
+		padding:0 10px 10px 0;
+    }
+
+	.download td{
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	br.h_br{
+		display: none;
+	}
+
+
+}
 
 @media screen and (max-width:768px) {
     
     .txtList5 li {
         width: 50%;
     }
+
+	.download td{
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	br.h_br{
+		display: none;
+	}
+
 }
 
 @media screen and (max-width:500px) {
+
+	div.content{
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom:20px ;
+	}
+
+	div.main_content{
+		width: 100%;
+		float: left;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom:20px ;
+	}
+
+	.CSMIE_img_header{
+		width: 200px;
+	}
+
+	div.h_text{
+		
+		line-height: 20px;
+	}
+
+	#time{
+		display: none;
+	}
+
+	br.h_br{
+		display: inline-block;
+	}
+
+	.vertical-line{
+		display: none;
+	}
+
+	.sy-tit .en {
+		font-size:40px;
+		padding-left: 10px;
+	}
+	
+	.sy-tit .tit {
+		font-size:24px;
+		padding-left: 15px;
+	}
+
+	.sy-more2{
+		padding-right: 0px;
+	}
+
+	.title_brief{
+		display:none; 
+	}
     
+	ul.txtList5 {
+		text-align: center;
+		padding-left: 0px;
+	}
+
     .txtList5 li {
-        /*width: 100%;*/
-		width:50%;
-		padding:0 5px 10px 0;
+		width:80%;
+		padding:0 0px 0px 0;
+		padding-right: 0px;
     }
 	.txtList5-m1 .date{
+		padding-top: -5px;
 		margin-right:5px;
 		width: 45px;
 		height: 50px;
 	}
-	.txtList5-m1 .date p{
-		padding-bottom:0;
-	}
-	.txtList5-m1 .date h3{
-		font-size:20px;
-	}
-	.txtList5-m1 .txt1{
-		padding-top:0;
-	}
+
+
+	.txtList5-m1 .date p{ padding-bottom:0; }
+	.txtList5-m1 .date h3{ font-size:16px; }
+	.txtList5-m1 .txt1{ padding-top:2px;vertical-align: middle; }
 	.txtList5-m1 .txt1 h3 a {
 		height: 55px;
 		font-size: 14px;
-		-webkit-line-clamp: 3;
+		-webkit-line-clamp: 2;
 	}
+
+	.cardBox {
+		width:90%;
+		color: #F8F8F8;
+		text-align: center;
+		float: left;
+		margin-right: 20px;
+	}
+
+	div.main_content{
+		width: 95%;
+		float: left;
+	}
+
+	div.menu{
+		width: 80%;
+		float: left;
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
+
+	.vertical-menu { width:95%; }
+
+		
+		
+	div.CopyRightZone{
+		width: 100%;
+		background-color:#023474;
+		display: flex; 
+		padding-top: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+	}
+
+	div.CopyRight{
+		text-align: center;
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+
+
+	div.cpy_details{
+		width: 100%;
+		padding-left: 10px;
+		text-align: center;
+	}
+
+	img.cpy_img{
+		width: 300px;
+	}
+
+	div.cpy_img2{
+		float: left;
+		width: 100%;
+	}
+
+	div.top{
+		width: 10%;
+		float: right;
+		margin-top: 0px;
+	}
+	img.cpy_img_tp{
+		width: 50px;
+	}
+
+
 }
 
 /*-------------------CopyRight-----------------------*/
 
 
-.CopyRightZone{
-	background-color:#F8F8F8;
-	padding-bottom: 0px;
-	padding-top: 30px;
+.footer{
+	display: flex;
+	width: 100%;
+	background-color:#023474;
 }
 
 .CopyRight{
+	width: 100%;
 	background-color:#023474;
 	font-family:Arial, Helvetica, sans-serif; 
 	text-align: center;
 	color: white; 
 	font-size: small;
-	padding-bottom: 10px;
+	margin-top: auto;
 	padding-top: 20px;
-}
-
-.CopyRight table{
-	width:100%;
-	border: 0;
-	margin: auto;
-	background-color:#023474;
 	padding-left: 30px;
 	padding-right: 30px;
+	padding-bottom: 10px;
 }
 
 .cpy_details{
+	width: 40%;
+	float: left;
+	padding-left: 50px;
 	word-break: break-all; 
 	font-size: 14; 
-	line-height: 20px;
-	width: 50% ;
+	line-height: 30px;
 	text-align: left;
+	background-color:#023474;
 }
 
 .cpy_link{
@@ -476,4 +684,27 @@ div.h_text{
 	font-size: 14; 
 	line-height: 20px; 
 	color: white;
+	background-color:#023474;
+}
+
+.cpy_img{
+	width: 400px;
+	background-color:#023474;
+}
+
+.cpy_img2{
+	float: right;
+	width: 55%;
+	background-color:#023474;
+}
+
+.top{
+	width: 5%;
+	float: right;
+	background-color:#023474;
+	margin-top: -90px;
+}
+
+.cpy_img_tp{
+	width: 50px;
 }
