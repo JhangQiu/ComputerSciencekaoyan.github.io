@@ -124,26 +124,6 @@ div.main_content_branch{
 	padding-bottom:40px ;
 }
 
-/*------------------------location-----------------------------------------*/
-
-div.location{
-	font-size:16px;
-	font-family: 微软雅黑;
-	text-align: right;
-	color: #01478e;
-	font-weight: bold;
-	padding-right: 10px;
-}
-
-div.location a{
-	font-size:16px;
-	font-family: 微软雅黑;
-	text-align: right;
-	color: #01478e;
-	font-weight: bold;
-}
-
-
 /*-------------------------vertical-menu------------------------------------------------------*/
 
 div.menu{
@@ -550,9 +530,10 @@ ul.txtList5 {
 		padding-right: 0px;
 		padding-bottom:20px ;
 	}
-
+	.header{ padding-left:20px; }
 	.CSMIE_img_header{ width: 200px; }
 	div.h_text{ line-height: 20px; }
+	.headertext{ padding-right:60px; }
 	#time{ display: none; }
 	br.h_br{ display: inline-block; }
 	img.pic_sy1{ display: none; }
@@ -561,7 +542,7 @@ ul.txtList5 {
 
 	.sy-tit .en {
 		font-size:40px;
-		padding-left: 10px;
+		padding-left: 15px;
 	}
 	
 	.sy-tit .tit {
@@ -569,10 +550,7 @@ ul.txtList5 {
 		padding-left: 15px;
 	}
 
-	.sy-more2{
-		padding-right: 0px;
-	}
-
+	.sy-more2{ padding-right: 0px; }
 	.title_brief{ display:none;  }
     
 	ul.txtList5 {

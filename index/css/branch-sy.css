@@ -14,3 +14,105 @@
     color: black;
     text-decoration: none;
  }
+
+/*---------------------------------------------title----------------------------------------*/
+.sy-tit2 {
+   position: relative;
+   margin-bottom: 0.05rem;
+   text-align: center;
+   left: 0%;
+   padding-bottom: 60px;
+   padding-top: 30px;
+   line-height: 30px;
+ }
+ .sy-tit2 .en {
+   font-size:60px;
+   color: rgba(215, 218, 219, 0.15);
+   font-family:Arial, Helvetica, sans-serif;
+   position:absolute;
+   font-weight: bold;
+   text-align: center;
+
+ }
+
+.sy-tit2 .tit {
+   position: absolute;
+   font-size: 28px;
+   font-weight:bold;
+   color: #023474;
+   font-family: 微软雅黑;
+  
+}
+
+
+
+
+
+
+
+
+
+ /*------------------------location-----------------------------------------*/
+
+div.location{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+div.location a{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+   padding-bottom: 10px;
+}
+
+img.location_img{
+   width: 30px;
+   padding-bottom: 0px;
+   vertical-align:middle;
+}
+
+/*-------------------adoption-------------------*/
+
+@media screen and (min-width:1220px) {
+
+
+
+}
+
+@media screen and (max-width:1220px) {
+
+  
+
+  
+}
+
+@media screen and (max-width:768px) {
+   
+   
+
+}
+
+@media screen and (max-width:500px) {
+
+   img.location_img{ width: 20px; }
+   .sy-tit2 .en {
+		font-size:40px;
+		padding-left: 0px;
+	}
+	
+	.sy-tit2 .tit {
+		font-size:24px;
+		padding-left: 0px;
+	}
+
+   div.location{ font-size:14px; }
+   div.location a{ font-size:14px; }
+
+}
