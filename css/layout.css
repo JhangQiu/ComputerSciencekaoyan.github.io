@@ -40,7 +40,7 @@ div.wrapper{
 	padding-top: 20px;
 	padding-bottom: 40px;
 	background: url('../image/head-bg.png') center repeat-x;
-	background-size: auto 99%;
+	background-size: auto 100%;
 	text-decoration: none;
 }
 
@@ -117,13 +117,6 @@ div.main_content{
 	padding-bottom:40px ;
 }
 
-div.main_content_branch{
-	width: 90%;
-    float: left;
-	padding-left: 40px;
-	padding-bottom:40px ;
-}
-
 /*-------------------------vertical-menu------------------------------------------------------*/
 
 div.menu{
@@ -184,6 +177,12 @@ div.menu_branch{ display: none; }
 	font-family: 微软雅黑;
 	
   }
+
+  td.sy-more2_overall{
+	width: 40%;
+	padding-right: 0px;
+  }
+
   .sy-more2{
     display: block;
     width:70px;
@@ -520,7 +519,7 @@ ul.txtList5 {
 	div.content{
 		padding-left: 0px;
 		padding-right: 0px;
-		padding-bottom:20px ;
+		padding-bottom: 20px ;
 	}
 
 	div.main_content{
@@ -528,8 +527,9 @@ ul.txtList5 {
 		float: left;
 		padding-left: 0px;
 		padding-right: 0px;
-		padding-bottom:20px ;
+		padding-bottom: 20px ;
 	}
+
 	.header{ padding-left:20px; }
 	.CSMIE_img_header{ width: 200px; }
 	div.h_text{ line-height: 20px; }
@@ -541,14 +541,16 @@ ul.txtList5 {
 	.vertical-line{ display: none; }
 
 	.sy-tit .en {
-		font-size:40px;
+		font-size: 40px;
 		padding-left: 15px;
 	}
 	
 	.sy-tit .tit {
-		font-size:24px;
+		font-size: 24px;
 		padding-left: 15px;
 	}
+
+	td.sy-more2_overall{ padding-right: 30px; }
 
 	.sy-more2{ padding-right: 0px; }
 	.title_brief{ display:none;  }
@@ -589,11 +591,12 @@ ul.txtList5 {
 		margin-right: 20px;
 	}
 
-	div.main_content{
-		width: 95%;
-		float: left;
+	.LLvertical-menu {
+		width:95%;
+		list-style-type:none;
+		text-align: left;
 	}
-
+	
 	div.menu{
 		width: 80%;
 		float: left;
@@ -639,6 +642,7 @@ ul.txtList5 {
 		width: 10%;
 		float: right;
 		margin-top: 0px;
+		padding-right: 10px;
 	}
 
 	img.cpy_img_tp{ width: 50px; }
