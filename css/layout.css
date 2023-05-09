@@ -1,6 +1,6 @@
 /**
  * @file layout.css
- * @author JhangQiu
+ * @author computersicencekaoyan
  * @brief 
  * @version 0.1
  * @date 2023-05-06
@@ -283,9 +283,9 @@ div.menu_branch{ display: none; }
     display: block;
     padding: 12px;
     text-decoration: none;  
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 16px;
     font-family: "RobotoCondensedBold";
+	font-weight: bold;
 }
 .LLvertical-menu br{
 	line-height:2px;

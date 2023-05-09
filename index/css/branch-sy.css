@@ -1,0 +1,17 @@
+/**
+ * @file branch-sy.css
+ * @author Jhang Qiu
+ * @brief 
+ * @version 0.1
+ * @date 2023-05-09
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
+ a.linkpage_reference{
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+
+ }
