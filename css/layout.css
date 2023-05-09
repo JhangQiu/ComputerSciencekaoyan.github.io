@@ -117,6 +117,33 @@ div.main_content{
 	padding-bottom:40px ;
 }
 
+div.main_content_branch{
+	width: 90%;
+    float: left;
+	padding-left: 40px;
+	padding-bottom:40px ;
+}
+
+/*------------------------location-----------------------------------------*/
+
+div.location{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+div.location a{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+}
+
+
 /*-------------------------vertical-menu------------------------------------------------------*/
 
 div.menu{
@@ -126,6 +153,8 @@ div.menu{
 	padding-left: 30px;
 	
 }
+
+div.menu_branch{ display: none; }
 
 .vertical-menu {
     width:95%;
