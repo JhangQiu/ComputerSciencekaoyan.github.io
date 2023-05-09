@@ -10,7 +10,7 @@
  */
 
 
- body{
+body{
 	margin:0;
 	padding:0;
 	font-size:13px;
@@ -19,6 +19,7 @@
 	height: 100%;
 	background-color:#F8F8F8 ;
 	}
+
 a {	text-decoration: none;	}
 
 /* ----------------------------------------------header-------------------------------------*/
@@ -26,25 +27,26 @@ a {	text-decoration: none;	}
 div.wrapper{
 	display:block;
 	width:100%;
+	text-decoration: none;
 	}
 
 .header{
-	position:relative;
-	margin:0 auto -10px;
+	position:absolute;
 	display:block;
-	width:90%;
-	height:150%;
+	width: 100%;
 	line-height: normal;
-	padding-left:10px;
+	padding-left:40px;
 	padding-right:40px;
 	padding-top: 20px;
 	padding-bottom: 40px;
+	background: url('../image/head-bg.png') center repeat-x;
+	background-size: auto 99%;
+	text-decoration: none;
 }
 
 .row1{ 
 	color:#F8F8F8;
 	background-color:#F8F8F8;
-	background-image: linear-gradient(#404040,#F8F8F8);
 	position:fixed;
 	_position:absolute;
 	top:0
@@ -64,21 +66,20 @@ div.wrapper{
 	width:65%;
 	word-break: break-all;
 	text-align: right;
+	padding-right:100px;
 }
 
-.headertext table{
-	display: inline-block;
-}
+.headertext table{ display: inline-block; }
 
 #time{
 	font-family:微软雅黑;
-	font-size: small;
+	font-size: medium;
 	color:white;
 }
 
 div.h_text{
 	font-family:微软雅黑;
-	font-size: small;
+	font-size: medium;
 	color: white;
 	line-height: 40px;
 }
@@ -103,13 +104,10 @@ div.h_text{
 	line-height:0;
 }
 
-
-
 .content{
 	width:100%;
 	line-height: normal;
 	position: relative;
-	
 }
 
 div.main_content{
@@ -237,13 +235,10 @@ div.menu{
     text-align: left;
 }
 
-.LLvertical-menu ul{
-   list-style-type:none;
-}
+.LLvertical-menu ul{ list-style-type:none; }
 
-.LLvertical-menu li{
-    padding-top:10px;
-}
+.LLvertical-menu li{ padding-top:10px; }
+
 .LLvertical-menu .title{
 	font-size: 18px;
 	font-weight:bold;
@@ -447,17 +442,33 @@ ul.txtList5 {
 
 @media screen and (min-width:1220px) {
 
-    .h_br{
-		display: none;
-	}
+    br.h_br{ display: none; }
+	.pic_sy1{ display: block; }
+	.pic_sy2{ display: none;}
+	
 
 
 }
+
 @media screen and (max-width:1220px) {
 
+	
+	br.h_br{ display: none; }
+	img.pic_sy2{ display: none; }
+	img.pic_sy1{ display: block; }
+	#time{ font-size: small; }
+	div.h_text{ font-size: small; }
+
+	div.main_content{
+		width: 70%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	div.menu{ width: 20%; }
+
     .txtList5 li {
-        /*width: 100%;*/
-		width:50%;
+		width:45%;
 		padding:0 10px 10px 0;
     }
 
@@ -467,11 +478,14 @@ ul.txtList5 {
 		padding-right: 10px;
 	}
 
-	br.h_br{
-		display: none;
+	
+	.cardBox {
+		width: 33%;
+		float: left;
+		margin-right: 0px;
 	}
 
-
+	
 }
 
 @media screen and (max-width:768px) {
@@ -486,9 +500,9 @@ ul.txtList5 {
 		padding-right: 10px;
 	}
 
-	br.h_br{
-		display: none;
-	}
+	br.h_br{ display: none; }
+	img.pic_sy2{ display: none; }
+
 
 }
 
@@ -508,26 +522,13 @@ ul.txtList5 {
 		padding-bottom:20px ;
 	}
 
-	.CSMIE_img_header{
-		width: 200px;
-	}
-
-	div.h_text{
-		
-		line-height: 20px;
-	}
-
-	#time{
-		display: none;
-	}
-
-	br.h_br{
-		display: inline-block;
-	}
-
-	.vertical-line{
-		display: none;
-	}
+	.CSMIE_img_header{ width: 200px; }
+	div.h_text{ line-height: 20px; }
+	#time{ display: none; }
+	br.h_br{ display: inline-block; }
+	img.pic_sy1{ display: none; }
+	img.pic_sy2{ display: block; }
+	.vertical-line{ display: none; }
 
 	.sy-tit .en {
 		font-size:40px;
@@ -543,14 +544,12 @@ ul.txtList5 {
 		padding-right: 0px;
 	}
 
-	.title_brief{
-		display:none; 
-	}
+	.title_brief{ display:none;  }
     
 	ul.txtList5 {
 		text-align: center;
 		padding-left: 0px;
-        padding-right: 0px;
+		
 	}
 
     .txtList5 li {
@@ -597,8 +596,6 @@ ul.txtList5 {
 
 	.vertical-menu { width:95%; }
 
-		
-		
 	div.CopyRightZone{
 		width: 100%;
 		background-color:#023474;
@@ -618,16 +615,13 @@ ul.txtList5 {
 		padding-bottom: 20px;
 	}
 
-
 	div.cpy_details{
 		width: 100%;
 		padding-left: 10px;
 		text-align: center;
 	}
 
-	img.cpy_img{
-		width: 300px;
-	}
+	img.cpy_img{ width: 300px; }
 
 	div.cpy_img2{
 		float: left;
@@ -639,10 +633,8 @@ ul.txtList5 {
 		float: right;
 		margin-top: 0px;
 	}
-	img.cpy_img_tp{
-		width: 50px;
-	}
 
+	img.cpy_img_tp{ width: 50px; }
 
 }
 
@@ -706,6 +698,4 @@ ul.txtList5 {
 	margin-top: -90px;
 }
 
-.cpy_img_tp{
-	width: 50px;
-}
+.cpy_img_tp{ width: 50px; }
