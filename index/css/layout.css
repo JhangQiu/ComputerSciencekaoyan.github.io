@@ -149,6 +149,8 @@ div.menu_branch{ display: none; }
     background-color:#064db4;
     color: white;
 }
+
+
 /*---------------------------------------------title----------------------------------------*/
 .sy-tit {
     position: relative;
@@ -453,14 +455,14 @@ ul.txtList5 {
     br.h_br{ display: none; }
 	.pic_sy1{ display: block; }
 	.pic_sy2{ display: none;}
-	
+	.control-2{ display: none; }
 
 
 }
 
 @media screen and (max-width:1220px) {
 
-	
+	.control-2{ display: none; }
 	br.h_br{ display: none; }
 	img.pic_sy2{ display: none; }
 	img.pic_sy1{ display: block; }
@@ -510,8 +512,7 @@ ul.txtList5 {
 
 	br.h_br{ display: none; }
 	img.pic_sy2{ display: none; }
-
-
+	.control-2{ display: none; }
 }
 
 @media screen and (max-width:500px) {
@@ -605,6 +606,7 @@ ul.txtList5 {
 	}
 
 	.vertical-menu { width:95%; }
+	.control-1{ display: none; }
 
 	div.CopyRightZone{
 		width: 100%;
