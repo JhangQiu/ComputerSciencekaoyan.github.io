@@ -144,9 +144,8 @@ div.footer{
     width: 100%;
     float: left;
     display:block;
-    position:absolute;
+    position: absolute;
     bottom:0;
-
 }
 
 .subline{
