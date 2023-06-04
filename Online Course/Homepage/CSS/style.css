@@ -109,6 +109,119 @@ td.course-information{
     text-align: left;
     padding-left: 20px;
 }
+/*--------Course Overview------*/
+
+.syllabus-layout{
+    width: 100%;
+}
+.syllabus-head{
+    font-size: medium;
+    border-bottom: 1px solid gray;
+}
+
+.syllabus-body{
+    border-bottom: 1px solid gray;
+}
+
+th.sy-id{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+}
+
+td.sy-id{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sy-details{
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+
+.sy-syllabus{
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+}
+
+/*--------curriculum----------*/
+
+#no{
+    width:10%;
+    text-align: center;
+}
+
+#course{
+    width:20%;
+    text-align: center;
+}
+
+#course-title{
+    width:40%;
+    text-align: center;
+}
+
+#course-type{
+    width:10%;
+    text-align: center;
+}
+
+#homepage{
+    width:20%;
+    text-align: center;
+}
+
+td.no{
+    width:10%;
+    text-align: center;
+}
+
+td.course{
+    width:20%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.course-title{
+    width:40%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.course-type{
+    width:10%;
+    text-align: center;
+}
+
+td.homepage{
+    width:20%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.homepage a{
+    text-decoration:none;
+    color: blue;
+}
+
+tr.pass{
+    background-color: #CCFFCC;
+}
+
+tr.Postponed{
+    background-color: #FFCCCC;
+}
+
+.tbhead{
+    background-color: #aaaaaa;
+}
+
+
 
 /*--------Syllabus----------*/
 .syllabus-layout{
