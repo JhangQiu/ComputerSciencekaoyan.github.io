@@ -109,6 +109,16 @@ td.course-information{
     text-align: left;
     padding-left: 20px;
 }
+
+.link{
+    color: #008ee2;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #008ee2;
+    text-decoration: none;
+}
 /*--------Course Overview------*/
 
 .syllabus-layout{
@@ -129,11 +139,10 @@ th.sy-id{
     padding: 5px;
 }
 
-td.sy-id{
+td.ov-id{
     width: 20%;
     text-align: left;
     padding: 5px;
-    font-style: italic;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -249,6 +258,7 @@ td.sy-date{
     font-style: italic;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 .sy-details{
     width: 60%;
