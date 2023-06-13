@@ -172,7 +172,18 @@ div.footer{
     color: #008ee2;
 }
 
+.announce:hover{
+    color: #008ee2;
+}
+
 .top{
+    color: #008ee2;
+    text-align: right;
+    padding-right: 15px;
+    right: 15px;
+}
+
+.top:hover{
     color: #008ee2;
     text-align: right;
     padding-right: 15px;
