@@ -143,26 +143,28 @@ td.course-information{
 .link-list-item a{
     color: black;
     display: block;
-    padding: 10px;
+    padding: 12px;
     padding-left:0px;
     text-decoration: none;  
-	font-size: 16px;
+	font-size: 15px;
     font-family: "RobotoCondensedBold";
 }
 
 .link-list-item a:hover{
     color: black;
     display: block;
-    padding: 15px;
+    padding: 12px;
+    padding-left:0px;
     text-decoration: none;  
 	font-size: 15px;
     font-family: "RobotoCondensedBold";
 }
 
 .link-list-img{
-    width: 20px;
-    padding: 10px;
+    width: 25px;
+    padding: 12px 12px 12px 15px;
 }
+
 
 .link{
     color: #008ee2;
@@ -385,26 +387,52 @@ td.as-due{
 
 /*-----adaption-------*/
 
+
 @media screen and (max-width:1200px) {
-    
+    .link-list-img{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-img:hover{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-item a{
+        padding: 10px;
+        padding-left: 3px;
+
+    } 
+
+    .link-list-item a:hover{
+        padding: 10px;
+        padding-left: 3px;
+    }
 }
 
 @media screen and (max-width:500px) {
     .link-list-img{
         width: 20px;
+        padding: auto;
+        padding: 50%;
     }
 
     .link-list-img:hover{
         width: 20px;
+        padding: auto;
+        padding: 50%;
     }
 
     .link-list-item a{
         padding: 10px;
-        padding-left: 0px;
+        padding-left: 20px;
     } 
 
     .link-list-item a:hover{
         padding: 10px;
-        padding-left: 0px;
+        padding-left: 20px;
     }
 }
