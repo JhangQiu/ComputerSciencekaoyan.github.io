@@ -121,7 +121,7 @@ table.calendar thead tr {
     font-family: "RobotoCondensedBold";
 }
 
-.link-list-item a:hover{
+.btn a:hover{
     color: black;
     display: block;
     padding: 7px 7px 7px 3px;
@@ -136,6 +136,24 @@ table.calendar thead tr {
     padding: 7px 3px 7px 9px;
 }
 
+/*--------button-ver2----*/
+.btn-ver2{
+    display: inline-block;
+    background-color: white;
+    border-radius: 3px #008ee2;
+    border: 1px solid #008ee2;
+    padding: 3px 6px;
+    font-size: 15px;
+}
+
+.btn-ver2:hover{
+    display: inline-block;
+    background-color: #FAFAFA;
+    border-radius: 3px #008ee2;
+    border: 1px solid #008ee2;
+    padding: 3px 6px;
+    font-size: 15px;
+}
 
 /*------Linklist--------*/
 .link-list{
