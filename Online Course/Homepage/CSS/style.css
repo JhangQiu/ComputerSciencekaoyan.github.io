@@ -1,3 +1,4 @@
+/*-------calendar-------*/
 table.calendar {
     font-family: arial, helvetica;
     font-size: 10pt;
@@ -113,7 +114,7 @@ table.calendar thead tr {
 .btn a{
     color: black;
     display: block;
-    padding: 10px;
+    padding: 7px 7px 7px 3px;
     padding-left:0px;
     text-decoration: none;  
 	font-size: 14px;
@@ -123,7 +124,7 @@ table.calendar thead tr {
 .link-list-item a:hover{
     color: black;
     display: block;
-    padding: 10px;
+    padding: 7px 7px 7px 3px;
     padding-left:0px;
     text-decoration: none;  
 	font-size: 14px;
@@ -132,7 +133,7 @@ table.calendar thead tr {
 
 .btn-img{
     width: 20px;
-    padding: 10px 10px 10px 12px;
+    padding: 7px 3px 7px 9px;
 }
 
 
@@ -192,6 +193,61 @@ table.calendar thead tr {
     padding: 10px 10px 10px 12px;
 }
 
+@media screen and (max-width:1200px) {
+    .link-list-img{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-img:hover{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-item a{
+        padding: 10px;
+        padding-left: 3px;
+
+    } 
+
+    .link-list-item a:hover{
+        padding: 10px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .link-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .link-list-img:hover{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .link-list-item a{
+        padding: 10px;
+        padding-left: 20px;
+    } 
+
+    .link-list-item a:hover{
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .file-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+}
+
 /*------Filelist-------*/
 .file-list{
     display: block;
@@ -242,6 +298,54 @@ table.calendar thead tr {
     padding: 10px 10px 10px 12px;
 }
 
+@media screen and (max-width:1200px) {
+    .file-list-img{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .file-list-img:hover{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .file-list-item a{
+        padding: 10px;
+        padding-left: 3px;
+
+    } 
+
+    .file-list-item a:hover{
+        padding: 10px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .file-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .file-list-img:hover{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .file-list-item a{
+        padding: 10px;
+        padding-left: 20px;
+    } 
+
+    .file-list-item a:hover{
+        padding: 10px;
+        padding-left: 20px;
+    }
+}
 
 
 /*-------Home-----------*/
@@ -494,99 +598,11 @@ td.as-due{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/*-----adaption-------*/
 
 
-@media screen and (max-width:1200px) {
-    .link-list-img{
-        width: 25px;
-        padding: auto;
-        padding: 10px 7px 10px 10px;
-    }
+/*--------background-----*/
 
-    .link-list-img:hover{
-        width: 25px;
-        padding: auto;
-        padding: 10px 7px 10px 10px;
-    }
-
-    .link-list-item a{
-        padding: 10px;
-        padding-left: 3px;
-
-    } 
-
-    .link-list-item a:hover{
-        padding: 10px;
-        padding-left: 3px;
-    }
-
-    .file-list-img{
-        width: 25px;
-        padding: auto;
-        padding: 10px 7px 10px 10px;
-    }
-
-    .file-list-img:hover{
-        width: 25px;
-        padding: auto;
-        padding: 10px 7px 10px 10px;
-    }
-
-    .file-list-item a{
-        padding: 10px;
-        padding-left: 3px;
-
-    } 
-
-    .file-list-item a:hover{
-        padding: 10px;
-        padding-left: 3px;
-    }
+.bg-gray{
+    background-color: #FAFAFA;
 }
 
-@media screen and (max-width:500px) {
-    .link-list-img{
-        width: 20px;
-        padding: auto;
-        padding: 50%;
-    }
-
-    .link-list-img:hover{
-        width: 20px;
-        padding: auto;
-        padding: 50%;
-    }
-
-    .link-list-item a{
-        padding: 10px;
-        padding-left: 20px;
-    } 
-
-    .link-list-item a:hover{
-        padding: 10px;
-        padding-left: 20px;
-    }
-
-    .file-list-img{
-        width: 20px;
-        padding: auto;
-        padding: 50%;
-    }
-
-    .file-list-img:hover{
-        width: 20px;
-        padding: auto;
-        padding: 50%;
-    }
-
-    .file-list-item a{
-        padding: 10px;
-        padding-left: 20px;
-    } 
-
-    .file-list-item a:hover{
-        padding: 10px;
-        padding-left: 20px;
-    }
-}
