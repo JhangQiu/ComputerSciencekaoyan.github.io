@@ -1,17 +1,4 @@
-
-/**
- * @file oc-founction.css
- * @author computersicencekaoyan
- * @brief 
- * @version 0.1
- * @date 2023-05-27
- * 
- * @copyright Copyright (c) 2023
- * 
- */
- 
- 
- /*导航栏：
+/*导航栏：
     点击导航栏切换页面风格
 */
 .dropdown {
@@ -27,7 +14,6 @@
     color:#008ee2;
     background-color: #ffffff;
     text-align: right;
-    
 }
 .dropdown-content {
     display:none;
@@ -37,7 +23,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -45,20 +30,9 @@
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {
-    background-color: #008EE2;
-    color: white;
+    background-color: #ffffffe2;
 }
-
 .show {
     display: block;
-}
-
-/*---------button----------*/
-
-.score-button{
-    width: 100%;
-    padding-top: 10px;
-    color: #eeeeee;
 }

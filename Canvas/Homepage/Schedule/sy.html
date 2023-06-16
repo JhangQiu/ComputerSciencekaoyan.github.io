@@ -1,20 +1,32 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Schedule</title>
+  <title>CSE++PAP</title>
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="sy-calendar.css" type="text/css">
   <script src="vue.min.js"></script>
+  <script type="text/javascript">
+    function autofill_email() {
+      var spans = document.getElementsByTagName("span");
+      for (i = 0; i < spans.length; i++) {
+        if (spans[i].className != "email_autofill")
+          continue;
+        spans[i].innerHTML = spans[i].innerHTML.replace(/ at /, "@");
+      }
+    }
+    function page_onload() {
+      autofill_email();
+    }
+  </script>
 </head>
 
 <body bgcolor="#ffffff" text="#000000" onLoad="page_onload()">
-    
-    <div id="app">
-        <div id="title-sy">
+    <div id="title-sy">
         Schedule of PPCA & ICS, 2023 Spring
-        </div>
+    </div>
+    <div id="app">
         <Calendar start-date="2023-04-24">
             <!-- Week 0 -->
             <Week>
@@ -202,214 +214,6 @@
                     <Day class="special"><br><i>Final Exam Week</i> </Day>
                 </Week>
         </Calendar>
-        <br>
-        <div id="title-sy">
-            College English Test Band Six, 2023 Spring
-        </div>
-        <Calendar start-date="2023-05-08">
-            
-            <!-- Week 1 -->
-            <Week>
-            <!-- Week 1: Monday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b>  2019 Jun 3nd <br>
-                    <span class="reading"><b>Vocabulary</b>: Study Guide 1 Review</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: N</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 1: Tuesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2019 Jun 1st<br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 03</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: N</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 1: Wednesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2019 Dec 3nd<br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 04 05</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Recitation</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 1: Thursday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2019 Dec 1st <br>
-                    <span class="reading"><b>Vocabulary</b>: Study Guide 2 Review</span> <br>
-                    <span class="reading"><b>Reading</b>:  Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: N</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 1: Friday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b>(hw) 2020 Dec 1st<br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 06 07</span> <br>
-                    <span class="reading"><b>Reading</b>: N</span> <br>
-                    <span class="reading"><b>Listening</b>: N</span> <br>
-                    <span class="reading"><b>Writing</b>: N</span> <br>
-                    <span class="reading"><b>Translation</b>: Overall 1st week</span> <br>
-                </Day>
-            </Week>
-
-
-            <!-- Week 2 -->
-            <Week>
-            <!-- Week 2: Monday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2019 Dec 2rd  <br>
-                    <span class="reading"><b>Vocabulary</b>: Study Guide 3 Review</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 2: Tuesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2020 Jul overall<br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 08 09</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 2: Wednesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2020 Sep 2rd <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 10 11</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: N</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 2: Thursday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2020 Sep 1st  <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 12 13</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: N</span> <br>
-                </Day>
-            <!-- Week 2: Friday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> (hw) 2020 Dec 2rd <br>
-                    <span class="reading"><b>Vocabulary</b>: Study Guide 4 Review</span> <br>
-                    <span class="reading"><b>Reading</b>: N</span> <br>
-                    <span class="reading"><b>Listening</b>: N</span> <br>
-                    <span class="reading"><b>Writing</b>: N</span> <br>
-                    <span class="reading"><b>Translation</b>: Overall 2rd week</span> <br>
-                </Day>
-            </Week>
-
-            <!-- Week 3 -->
-            <Week>
-            <!-- Week 3: Monday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2020 Dec 3nd <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 14 15</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y-Supply</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: Y</span> <br>
-                </Day>
-            <!-- Week 3: Tuesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2021 Jun 1st  <br>
-                    <span class="reading"><b>Vocabulary</b>: Study Guide 5 Review</span> <br>
-                    <span class="reading"><b>Reading</b>: Y </span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: Y</span> <br>
-                </Day>
-            <!-- Week 3: Wednesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2021 Jun 2rd  <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 16</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: Y</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: Y</span> <br>
-                </Day>
-            <!-- Week 3: Thursday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2021 Jun 3nd <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 17</span> <br>
-                    <span class="reading"><b>Reading</b>: Y</span> <br>
-                    <span class="reading"><b>Listening</b>: N</span> <br>
-                    <span class="reading"><b>Writing</b>: Y</span> <br>
-                    <span class="reading"><b>Translation</b>: Y</span> <br>
-                </Day>
-            <!-- Week 3: Friday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> (hw) 2021 Dec 1st <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 18 19</span> <br>
-                    <span class="reading"><b>Topic</b>: Recitation</span> <br>
-                    
-                </Day>
-            </Week>
-
-            <!-- Week 1 -->
-            <Week>
-            <!-- Week 1: Monday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2022 Dec 2rd <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 20 21 </span> <br>
-                    
-                </Day>
-            <!-- Week 1: Tuesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2022 Jun 1st  <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 22 23</span> <br>
-                    
-                </Day>
-            <!-- Week 1: Wednesday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2022 Jun 2rd  <br>
-                    <span class="reading"><b>Vocabulary</b>:Ex 24 25</span> <br>
-                    <span class="reading"><b>Translation</b>:  3nd</span> <br>
-                </Day>
-            <!-- Week 1: Thursday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b> 2022 Sep 1st <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 26 27</span> <br>
-                    
-                </Day>
-            <!-- Week 1: Friday -->
-                <Day class="lecture"><br>
-                    <b>College Engshi Test:</b>  (hw) 2022 Dec 1st <br>
-                    <span class="reading"><b>Vocabulary</b>: Ex 28 29</span> <br>
-                    
-                </Day>
-            </Week>
-
-            <!-- Week 8-->
-            <Week>
-            <!-- Monday -->
-                <Day class="special"><br><i>Final Exam Week</i> </Day>
-                <!-- Tuesday -->
-                <Day class="special"><br><i>Final Exam Week</i> <br>
-                    <b>College Engshi Test:</b>  2022 Dec 2rd <br>
-                </Day>
-                <!-- Wednesday -->
-                <Day class="special"><br><i>Final Exam Week</i> </Day>
-                <!-- Thursday -->
-                <Day class="special"><br><i>Final Exam Week</i> <br>
-                    <b>College Engshi Test:</b>  2022 Dec 3nd <br>
-                </Day>
-                <!-- Friday -->
-                <Day class="special"><br><i>Final Exam Week</i> <br>
-                    <b>College Engshi Test:</b>  2023 Mar <br>
-                    <b>Recitation</b>
-                </Day>
-            </Week>
-        </Calendar>
-        
 
         <script type="text/javascript">
             var d = new Date();
@@ -423,8 +227,6 @@
 
                   <!--  End Page Content  -->
     </div>
-
-
 
     <script type="text/x-template" id="template-calendar">
         <table class="calendar" cellspacing="0" cellpadding="8" width="100%">

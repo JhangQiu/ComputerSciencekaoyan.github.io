@@ -1,307 +1,233 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
+	<head>
+		<title>Canvas</title>
+		<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/oc-founction.css" type="text/css">
+		<script type="text/javascript"> 
+			function autofill_email() {
+				var spans = document.getElementsByTagName("span");
+				for (i = 0; i < spans.length; i++) {
+					if (spans[i].className != "email_autofill")
+						continue;
+					spans[i].innerHTML = spans[i].innerHTML.replace(/ at /, "@");
+				}
+			}
 
-<head>
-	<title>e-Course</title>
-	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/oc-founction.css" type="text/css">
-	<link rel="stylesheet" href="css/config.css" type="text/css">
-	<link rel="stylesheet" href="layDate-v5.3.1/laydate/theme/default/laydate.css" type="text/css">
-	<link rel="stylesheet" href="layui-main/dist/css/layui.css" media="all">
-	<script src="layui-main/dist/layui.js" charset="utf-8"></script>
-	<script src="JavaScript/element.js" charset="utf-8"></script>
-</head>
+			function page_onload() {
+				autofill_email();
+			}
+		</script>
+	</head>
+ 
+<!--自适应屏幕选项：margin: 0px;-->
+<body bgcolor="#ffffff" text="#000000" onLoad="page_onload()" style="margin: 0px;">
+	<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  	<tbody>
 
+<!-- Header row -->
+    
+	<!-- horiz line --> 
+    
 
-<body class="content">
-	<div class="subside_menu">
-		
-			<a href="canvas.html">
-				<img  border="0" src="image/MSE.png" class="sidemark_title">
-			</a>
+	<tr>
+		<!-- Menu --> 
+      	<td bgcolor="#0099cc" valign="top" width="50"> <!--边栏宽度-->
+			<table cols="2"
+							     rows="1"
+							     border="0"
+							     cellspacing="0"
+							     cellpadding="0"
+							     width="100%"
+							     height="100%">
+	  			<tbody> 
+	    			<tr> 
+	      				<td valign="top">
+							<table cols="1" rows="1" border="0" cellspacing="0" cellpadding="0" width="100%"> 
+		  						<tbody> 
+									<BR>
+									<tr> 
+										<td> <div class="menuHead"> 
+											<a href="canvas.html" style="text-decoration:none;">
+												<img  border="0" src="image/首页_home.png" width="38" height="38">
+											</a>
+										</div></td>
+									</tr>
 
-			<a href=" https://oc.sjtu.edu.cn/ " target="_blank"> 
-				<img  border="0" src="image/SJTU.png" class="sidemark">
-			</a>
-
-			<a href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">
-				<img  border="0" src="image/更多_more-app.png" class="sidemark">
-			</a>
-
-			<a href=" https://www.icourse163.org/ " target="_blank">
-				<img  border="0" src="image/书籍1_book-one (1).png" class="sidemark">
-			</a>
-
-			<a href="https://leetcode.cn/" target="_blank"> 
-				<img  border="0" src="image/代码_code.png" class="sidemark"> 
-			</a>
-
-			<a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " target="_blank"> 
-				<img  border="0" src="image/收件箱_inbox-r.png" class="sidemark">
-			</a>
-	</div>
-
-	<div class="container">
-		<!---Dashboard--->
-		<div class="listview">
-			<!--Title-->
-			<table class="title"><tbody><tr>
-				<td class="text">Dashboard</td>
-				<td class="version">
-					<div>
-						<script type="text/javascript" src="JavaScript/element.js"></script>
-						<div class="dropdown">
-							  <button class="dropbtn" onclick="myFunction()">
-							  	More Version
-							  </button>
-							  <div class="dropdown-content" id="myDropdown">
-								<a href="canvas.html">CardView</a>
-								<a href="listview.html">ListView</a>
-								<a href="Homepage/Curriculum Structure.html" target="_blank">Enquiry</a>
-							  </div>
-						</div> 
-					</div>
-				</td>								
-			</tr></tbody></table>
-			<!--Title-->
-
-			<hr>
-
-
-
-			<div class="layui-collapse">
-				<div class="layui-colla-item">
-					<div class="layui-colla-title">2022-2023-1</div>
-					<div class="layui-colla-content">
-						<table class="profile" cellspacing="0" border="1px solid" cellpadding="0" Border-spacing="10px" style="width: 100%;">
-							<thead><tr class="tbhead">
-								<th id="no">No.</th>
-								<th id="course">COURSE</th>
-								<th id="course-title">COURSE TITLE</th>
-								<th id="course-type">TYPE</th>
-								<th id="homepage">HOMEPAGE</th>
-							</tr></thead>
-			
-							<tbody>
-								<tr class="pass">
-									<td class="no">1</td>
-									<td class="course">MATH1202</td>
-									<td class="course-title">Calculus</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">2</td>
-									<td class="course">MATH1207</td>
-									<td class="course-title">Probability and Statistics</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">3</td>
-									<td class="course">CS1501</td>
-									<td class="course-title">Thinking and Methodology in Programming(C++)</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">4</td>
-									<td class="course">CS2501</td>
-									<td class="course-title">Discrete Mathematics</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">5</td>
-									<td class="course">CS0501</td>
-									<td class="course-title">Basic Data Structure</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">6</td>
-									<td class="course">FL2203</td>
-									<td class="course-title">Collage English III-A</td>
-									<td class="course-type">C</td>
-									<td class="homepage">None</td>	
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			
-			
-				<div class="layui-colla-item">
-					<div class="layui-colla-title">2022-2023-2</div>
-					<div class="layui-colla-content">
-						<table class="profile" cellspacing="0" border="1px solid" cellpadding="0" Border-spacing="10px" style="width: 100%;">
-							<thead><tr class="tbhead">
-								<th id="no">No.</th>
-								<th id="course">COURSE</th>
-								<th id="course-title">COURSE TITLE</th>
-								<th id="course-type">TYPE</th>
-								<th id="homepage">HOMEPAGE</th>
-							</tr></thead>
-							<tbody>
-								<tr class="pass">
-									<td class="no">1</td>
-									<td class="course">MATH1205</td>
-									<td class="course-title">Linear Algebra</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/MATH1205.html" target="_blank">MATH1205</a></td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">2</td>
-									<td class="course">CS2307</td>
-									<td class="course-title">Computer Organization</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/CS2307.html" target="_blank">CS2307</a></td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">3</td>
-									<td class="course">CS2310</td>
-									<td class="course-title">Operating Systems</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/CS2310.html" target="_blank">CS2310</a></td>	
-								</tr>
-			
-								<tr class="Postponed">
-									<td class="no">4</td>
-									<td class="course">CS2311</td>
-									<td class="course-title">Computer Network</td>
-									<td class="course-type">C</td>
-									<td class="homepage">Postponed</td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">5</td>
-									<td class="course">CS0501</td>
-									<td class="course-title">Advanced Data Structure</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/CS0501.html" target="_blank">CS0501</a></td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">6</td>
-									<td class="course">FL1203</td>
-									<td class="course-title">Collage English III-B</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/Englishplus.html" target="_blank">English Plus</a></td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">7</td>
-									<td class="course">CS2309</td>
-									<td class="course-title">Problem solving and Practice</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="Homepage/CS2309.html" target="_blank">CS2309</a></td>	
-								</tr>
-			
-								<tr class="pass">
-									<td class="no">8</td>
-									<td class="course">SE2316</td>
-									<td class="course-title">Introduction to Computer System</td>
-									<td class="course-type">C</td>
-									<td class="homepage"><a href="https://oc.sjtu.edu.cn/login/canvas" target="_blank">Canvas</a></td>	
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			
-				<div class="layui-colla-item">
-					<div class="layui-colla-title">2022-2023-3</div>
-					<div class="layui-colla-content">
-						<table class="profile" cellspacing="0" border="1px solid" cellpadding="0" Border-spacing="10px" style="width: 100%;">
-							<thead><tr class="tbhead">
-								<th id="no">No.</th>
-								<th id="course">COURSE</th>
-								<th id="course-title">COURSE TITLE</th>
-								<th id="course-type">TYPE</th>
-								<th id="homepage">HOMEPAGE</th>
-							</tr></thead>
-			
-							<tbody>
-								<tr class="">
-									<td class="no">1</td>
-									<td class="course">--</td>
-									<td class="course-title">--</td>
-									<td class="course-type">C</td>
-									<td class="homepage">--</td>	
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			
-				<!--
-				<div class="layui-colla-item">
-					<div class="layui-colla-title">折叠面板的标题</div>
-					<div class="layui-colla-content">
-						<p>折叠面板的内容</p>
-					</div>
-				</div>
-				-->
-			</div>
-			
-			
-
-
-
-			
-			
-		</div>
-		<!---Dashboard--->
-
-
-		<div class="footer">
-			<table class="subline"><tbody><tr height="20px" width="100%" ><td class="announce"><hr>
-				<table style="width: 100%;"><tbody><tr>
-					<td style="width: 30%;"><a href="announce.html"> Announcement </a></td>
-					<td class="copyright">
-						Copyright © 2023 Department of Computer Science and Medical Interdisciplinary Engineering
-					</td>
-				</tr></tbody></table>						  
-			</td></tbody></table>
-		</div>
-	</div>
-
-	
+									<tr> 
+									<td> <div class="menuHead"> <a href=" https://oc.sjtu.edu.cn/ "
+										class="menuItem" target="_blank"> 
+										<img  border="0" src="image/SJTU.png" width="38" height="38">
+									</a> </div></td>
+									</tr> 
+				
+									<tr>
+									<td>
+										<div class="menuHead">
 											
+											<a href="https://gitee.com/Jinhang_Qiu/Course-Materials"
+											class="menuItem" target="_blank">
+											<img  border="0" src="image/更多_more-app.png" width="38" height="38">
+											</a>
+										</div>
+									</td>
+									</tr>
+									
+									<tr> 
+									<td> <div class="menuHead"> <a href=" https://www.icourse163.org/ " 
+										class="menuItem" target="_blank">
+										<img  border="0" src="image/书籍1_book-one (1).png" width="38" height="38">
+									</a>
+									</div></td> 
+									</tr> 
 
+									<tr> 
+									<td> <div class="menuHead"> 
+										<a href="https://leetcode.cn/"class="menuItem" target="_blank"> 
+											<img  border="0" src="image/代码_code.png" width="38" height="38"> 
+										</a><br> 
+									</div></td> 
+									</tr>
+
+									<tr> 
+										<td> <div class="menuHead"> <a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 "
+											class="menuItem" target="_blank"> 
+											<img  border="0" src="image/收件箱_inbox-r.png" width="38" height="38">
+										</a> </div></td>
+									</tr>
+
+									<tr> 
+										<td> <div class="menuHead"> <a href="quicklink.html"
+										class="menuItem">
+										<img  border="0" src="image/链接_link-two.png" alt="2022-2023-1@CS Curriculum" width="38" height="38">
+									</a><br> 
+										</div></td> 
+									</tr>
+		  						</tbody> 
+	      					</table>
+						</td> 
+	      				<td width="3" bgcolor="#0099cc"> <br>
+						</td> 
+	    			</tr> 
+	  			</tbody> 
+      		</table>
+		</td> 
+		<!-- End Menu --> 
+    <td colspan="2">
+		<!--the whole page--> 
+		<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%"> 
+			<tbody> 
+	    		<tr> 
+	      			<td style="padding: 10px;" valign="top" align="left">
+<!-- Begin Page Content -->
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%"> 
+							<tbody >
+								
+								<tr>
+									<!--main page and The Right Side-->
+									<!--The Main Page-->
+									<td width="100%" style="padding: 10px;padding-right: 50px;" valign="top" align="left">
+										<!--Dashboard and other version options-->
+										<div >
+											<table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 6px; padding-left: 0px; " valign="top" >
+												<tbody>
+													<tr>
+														<td width="50%" align="left" >
+															<b><font size="5">Dashboard</font></b>
+														</td>
+														<!--More Version-->
+														<td width="50%" style="padding-right: 6px;">
+															<div>
+																<script type="text/javascript" src="JavaScript/button.js"></script>
+																<div class="dropdown">
+																  	<button class="dropbtn" onclick="myFunction()">
+																	  More Version
+																  	</button>
+																  	<div class="dropdown-content" id="myDropdown">
+																		<a href="canvas.html">CardView</a>
+																		<a href="listview.html">ListView</a>
+																		<a href="Homepage/0x00.studentenquiry.html">Enquiry</a>
+																  	</div>
+																</div> 
+															</div>
+														</td>
+														<!--More Version/END-->
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<hr>
+										<!--Dashboard and other version options/END-->
+										
+										<!--DashBoard:card version-->
+											<table style="width: 100%;">
+												<tbody style="background-color: antiquewhite;">
+													<tr>
+														<td>
+															<p id="timer" style="color: red;">
+																<script type="text/javascript" src="JavaScript/timer.js" style="color: black;">
+																</script>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<br>
+											<br>
+											<div>
+												<iframe src='to-do-list.html' style="width: 700px;height:600px;" frameborder="0"></iframe>
+											</div>
+										<!--DashBoaed:Card Version/END-->
+										
+										<br>
+									</td>
+									<!--The main page/END-->
+								</tr>
+							</tbody>
+						</table>
+						<!--main page and to do list/END-->
+					</td>
+				</tr> 
+<!--  End Page Content  -->	
+
+<!-- Archnowledge -->		
+				
+				<tr height="20px" width="100%" >
+					<td style="padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+						<div style="padding-right: 50px;"><hr>
+						<table style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="width: 30%;">
+										<a href="announce.html" target="_blank" style="color: #008ee2; text-decoration:none;" > Announcement </a>
+									</td>
+									<td style="text-align:right; width: 70%; padding: 0;"><div style="text-align:right; padding: 0;font-size: small;">
+										Copyright © 2023 Department of Computer Science and Medical Interdisciplinary Engineering
+									</div>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+						</div>
+					</td>
+				</tr>
+<!-- End Archnowledge -->
+    		</tbody>
+		</table>
+		<!--the whole page/END-->
+	</td>
+	</tr>
+  	</tbody>
+	</table> 
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
+ 
 
