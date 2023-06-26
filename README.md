@@ -52,3 +52,52 @@ CSMIE <|..index
 CSMIE <|..GRE_Platform
 
 ```
+
+## LSM
+
+```mermaid
+
+classDiagram
+
+class e-Course{
+    -Homepeage
+    -Card_View
+    -List_View
+    -Grades
+    -Calendar
+    -Curriculum Configuration
+    -Authentication()
+}
+
+class Homepage(){
+    Information
+    Syllabus
+    Modules
+    Assignments
+    Resources
+    +print()
+    -Gitee()
+}
+
+class Grades(){
+    +Curriculum
+    -Grades
+    -Gitee()
+}
+
+class Curriculum Configuration{
+    curriculum title
+    id
+    credits
+    mark
+    semester
+    remark
+    -json()
+}
+
+
+e-Course <|.. Homepage
+e-Course <|.. Grades
+e-Course <|.. Curriculum Configuration
+
+```
