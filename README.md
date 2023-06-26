@@ -11,4 +11,58 @@ The curriculum at CSMIE covers computer science, biomedical engineering, and med
 CSMIE emphasizes international horizon and competitiveness. CSMIE is dedicated to cultivating professionals in the interdisciplinary field of computer science and medicine. Through a rich curriculum, practical opportunities, and research projects, the college provides students with comprehensive education and training. Students can learn knowledge in computer science and medicine, master relevant skills, and apply them to innovation and development in the medical field. CSMIE is committed to promoting the application of computer technology in the field of medicine and contributing to the development of the healthcare industry.
 
 ## Configuration
+<<<<<<< HEAD
 
+
+```mermaid
+
+classDiagram
+class CSMIE
+CSMIE : +index
+CSMIE : -LSM
+CSMIE : -GRE_Platform
+CSMIE : -Authentication()
+CSMIE : -Gitee()
+CSMIE : -EMail()
+
+class index{
+    +homepage
+    +news
+    +quicklink
+    -document
+    -file
+    +opensource()
+    -Gitee()
+}
+
+class LSM
+LSM : +Open_Course
+LSM : -e-Course
+LSM : -Authentication()
+
+class GRE_Platform{
+    -MARX101
+    -MATH301
+    -FL201
+    -CS408
+    -Authentication()
+}
+
+CSMIE <|..LSM
+CSMIE <|..index
+CSMIE <|..GRE_Platform
+
+```
+=======
+```mermaid
+graph TB
+    Start(开始) --> Open[打开冰箱门]
+    Open --> Put[把大象放进去]
+    Put[把大象放进去] --> IsFit{"冰箱小不小？"}
+    
+    IsFit -->|不小| Close[把冰箱门关上]
+    Close --> End(结束)
+        
+    IsFit -->|小| Change[换个大冰箱]
+    Change --> Open
+>>>>>>> cb3e6ec1ee31d598117b01ca014c33f24f28bdd5
