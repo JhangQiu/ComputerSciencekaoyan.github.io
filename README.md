@@ -1,4 +1,5 @@
-![CSMIE](/image/CSMIE_overall_blue.png "CSMIE")
+>  migration project !!
+
 
 # Computer Science and Medical Interdisciplinary Engineering
 
